@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+   
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+
+
+
+/* COMMON CSS END */
+
+.cursor{
+
+    width: 25px ;
+    height: 25px;
+    border-radius: 50%;
+    outline: 1px solid black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    
+}
+.smCursor{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    transition: 0.1s;
+    pointer-events: none;
+    
+}
+
+
+#myCounter,
+#myCounter .row{
+    width: 100vh;
+
+}
+.wrapper{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+}
+
+.wrapper .counter{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px ;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 10px;
+}
